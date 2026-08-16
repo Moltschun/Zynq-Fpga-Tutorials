@@ -3,6 +3,8 @@
 ![Vivado](https://img.shields.io/badge/Vivado_2023.2-E0232E?style=for-the-badge&logo=amd&logoColor=white)
 ![FPGA](https://img.shields.io/badge/XC7Z020_SP2-6A0DAD?style=for-the-badge&logo=semiconductor&logoColor=white)
 ![License](https://img.shields.io/badge/License_MIT-00599C?style=for-the-badge&logo=open-source-initiative&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
 
 ## О проекте (Mission Statement)
 
