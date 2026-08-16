@@ -1,8 +1,8 @@
 # Zynq-Fpga-Tutorials
 
-![Vivado Version](https://img.shields.io/badge/Vivado-2023.2-blue.svg)
-![FPGA](https://img.shields.io/badge/FPGA-XC7Z020-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Vivado](https://img.shields.io/badge/Vivado_2023.2-E0232E?style=for-the-badge&logo=amd&logoColor=white)
+![FPGA](https://img.shields.io/badge/XC7Z020_SP2-6A0DAD?style=for-the-badge&logo=semiconductor&logoColor=white)
+![License](https://img.shields.io/badge/License_MIT-00599C?style=for-the-badge&logo=open-source-initiative&logoColor=white)
 
 ## О проекте (Mission Statement)
 
@@ -20,7 +20,7 @@
 
 * **SoC:** Xilinx Zynq-7000 (XC7Z020-2CLG400)
 * **System Clock (PS):** 33.333 MHz
-* **Fabric Clock (PL):** 50.000 MHz (Pin `M19`)
+* **Fabric Clock (PL):** 50.000 MHz
 * **RAM:** 512MB DDR3
 * **Особенности:** Наличие HDMI, MIPI CSI-2, Gigabit Ethernet.
 
