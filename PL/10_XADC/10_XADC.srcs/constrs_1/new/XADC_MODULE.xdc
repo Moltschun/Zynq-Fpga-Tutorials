@@ -1,0 +1,6 @@
+set_property PACKAGE_PIN F18 [get_ports vauxp9]
+set_property IOSTANDARD LVCMOS33 [get_ports vauxp9]
+set_property IOSTANDARD LVCMOS33 [get_ports vauxn9]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property PACKAGE_PIN E18 [get_ports vauxn9]
+set_property PACKAGE_PIN M19 [get_ports clk]

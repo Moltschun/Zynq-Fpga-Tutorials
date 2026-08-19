@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Aug 19 13:07:42 2026
+# Process ID: 85564
+# Current directory: /projects/11_HDMI/11_HDMI.runs/rgb2dvi_0_synth_1
+# Command line: vivado -log rgb2dvi_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rgb2dvi_0.tcl
+# Log file: /projects/11_HDMI/11_HDMI.runs/rgb2dvi_0_synth_1/rgb2dvi_0.vds
+# Journal file: /projects/11_HDMI/11_HDMI.runs/rgb2dvi_0_synth_1/vivado.jou
+# Running On: epictetus, OS: Linux, CPU Frequency: 4115.980 MHz, CPU Physical cores: 12, Host memory: 16693 MB
+#-----------------------------------------------------------
+source rgb2dvi_0.tcl -notrace

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Aug 19 12:44:17 2026
+# Process ID: 43187
+# Current directory: /projects/10_XADC/10_XADC.runs/synth_1
+# Command line: vivado -log XADC_MODULE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source XADC_MODULE.tcl
+# Log file: /projects/10_XADC/10_XADC.runs/synth_1/XADC_MODULE.vds
+# Journal file: /projects/10_XADC/10_XADC.runs/synth_1/vivado.jou
+# Running On: epictetus, OS: Linux, CPU Frequency: 2105.917 MHz, CPU Physical cores: 12, Host memory: 16693 MB
+#-----------------------------------------------------------
+source XADC_MODULE.tcl -notrace

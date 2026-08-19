@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:/projects/10_XADC/10_XADC.srcs/constrs_1/new/XADC_MODULE.xdc rfile:../../../10_XADC.srcs/constrs_1/new/XADC_MODULE.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN F18 [get_ports vauxp9]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E18 [get_ports vauxn9]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN M19 [get_ports clk]

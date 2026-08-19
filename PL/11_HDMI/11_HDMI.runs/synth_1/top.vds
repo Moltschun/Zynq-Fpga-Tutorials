@@ -1,0 +1,264 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Aug 19 13:14:27 2026
+# Process ID: 86500
+# Current directory: /projects/11_HDMI/11_HDMI.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /projects/11_HDMI/11_HDMI.runs/synth_1/top.vds
+# Journal file: /projects/11_HDMI/11_HDMI.runs/synth_1/vivado.jou
+# Running On: epictetus, OS: Linux, CPU Frequency: 4076.226 MHz, CPU Physical cores: 12, Host memory: 16693 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1315.457 ; gain = 0.023 ; free physical = 1869 ; free virtual = 16498
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/projects/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2023.2/data/ip'.
+Command: synth_design -top top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 86532
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2059.648 ; gain = 403.660 ; free physical = 730 ; free virtual = 15360
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/projects/11_HDMI/11_HDMI.srcs/sources_1/new/top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/projects/11_HDMI/11_HDMI.runs/synth_1/.Xil/Vivado-86500-epictetus/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/projects/11_HDMI/11_HDMI.runs/synth_1/.Xil/Vivado-86500-epictetus/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'color_bar' [/projects/11_HDMI/11_HDMI.srcs/sources_1/new/color_bar.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'color_bar' (0#1) [/projects/11_HDMI/11_HDMI.srcs/sources_1/new/color_bar.v:2]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [/projects/11_HDMI/11_HDMI.runs/synth_1/.Xil/Vivado-86500-epictetus/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (0#1) [/projects/11_HDMI/11_HDMI.runs/synth_1/.Xil/Vivado-86500-epictetus/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/projects/11_HDMI/11_HDMI.srcs/sources_1/new/top.v:2]
+WARNING: [Synth 8-7137] Register hsync_reg in module color_bar has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/projects/11_HDMI/11_HDMI.srcs/sources_1/new/color_bar.v:62]
+WARNING: [Synth 8-7137] Register vsync_reg in module color_bar has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/projects/11_HDMI/11_HDMI.srcs/sources_1/new/color_bar.v:63]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2136.617 ; gain = 480.629 ; free physical = 622 ; free virtual = 15253
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2154.430 ; gain = 498.441 ; free physical = 623 ; free virtual = 15253
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2154.430 ; gain = 498.441 ; free physical = 623 ; free virtual = 15253
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2154.430 ; gain = 0.000 ; free physical = 623 ; free virtual = 15253
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/projects/11_HDMI/11_HDMI.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u2'
+Finished Parsing XDC File [/projects/11_HDMI/11_HDMI.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u2'
+Parsing XDC File [/projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'u1'
+Finished Parsing XDC File [/projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'u1'
+Parsing XDC File [/projects/11_HDMI/11_HDMI.srcs/constrs_1/new/HDMI.xdc]
+Finished Parsing XDC File [/projects/11_HDMI/11_HDMI.srcs/constrs_1/new/HDMI.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/projects/11_HDMI/11_HDMI.srcs/constrs_1/new/HDMI.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2304.180 ; gain = 0.000 ; free physical = 618 ; free virtual = 15248
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2304.215 ; gain = 0.000 ; free physical = 621 ; free virtual = 15252
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 610 ; free virtual = 15241
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 610 ; free virtual = 15241
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_CLK_n. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_CLK_n. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_CLK_p. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_CLK_p. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_DATA_n[0]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_DATA_n[0]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_DATA_n[1]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_DATA_n[1]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_DATA_n[2]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_DATA_n[2]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_DATA_p[0]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_DATA_p[0]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_DATA_p[1]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_DATA_p[1]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_DATA_p[2]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_DATA_p[2]. (constraint file  /projects/11_HDMI/11_HDMI.gen/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property KEEP_HIERARCHY = SOFT for u2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for u1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 611 ; free virtual = 15241
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 608 ; free virtual = 15240
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 581 ; free virtual = 15216
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 576 ; free virtual = 15211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 576 ; free virtual = 15211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 576 ; free virtual = 15211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 571 ; free virtual = 15206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 571 ; free virtual = 15206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 571 ; free virtual = 15206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 571 ; free virtual = 15206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 571 ; free virtual = 15206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 571 ; free virtual = 15206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |rgb2dvi_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |rgb2dvi |     1|
+|3     |LUT2    |     8|
+|4     |LUT3    |     7|
+|5     |LUT4    |     9|
+|6     |LUT5    |    14|
+|7     |LUT6    |    38|
+|8     |FDRE    |    28|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 571 ; free virtual = 15206
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2304.215 ; gain = 498.441 ; free physical = 570 ; free virtual = 15206
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2304.215 ; gain = 648.227 ; free physical = 571 ; free virtual = 15206
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2304.215 ; gain = 0.000 ; free physical = 735 ; free virtual = 15371
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2304.215 ; gain = 0.000 ; free physical = 899 ; free virtual = 15535
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c9a7824
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 2304.215 ; gain = 988.758 ; free physical = 899 ; free virtual = 15535
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1869.935; main = 1514.204; forked = 425.551
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3286.738; main = 2304.184; forked = 1014.570
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2328.191 ; gain = 0.000 ; free physical = 899 ; free virtual = 15535
+INFO: [Common 17-1381] The checkpoint '/projects/11_HDMI/11_HDMI.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 19 13:14:58 2026...
